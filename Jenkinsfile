@@ -3,14 +3,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "yourdockerhubusername/devsecops-demo"
+        IMAGE_NAME = "enterprise"
     }
 
     stages {
 
         stage('Clone') {
             steps {
-                echo 'Cloning Repository'
+                echo 'https://github.com/narupallenandu/enterprise-devsecops-pipeline.git'
             }
         }
 
